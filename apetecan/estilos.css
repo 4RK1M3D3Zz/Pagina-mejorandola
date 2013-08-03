@@ -1,0 +1,6 @@
+body /*Body es la etiqueta que englova todo lo visual*/
+{
+	background: #EFEFEf;  /*Es super importante terminar con ;*/
+	font-family: Arial; /*se usa arial por el momento*/
+	font-size: 16px; /*El tamaño estandar de lectura es 16px*/
+}
