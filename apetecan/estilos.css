@@ -1,6 +1,16 @@
 body /*Body es la etiqueta que englova todo lo visual*/
 {
-	background: #EFEFEf;  /*Es super importante terminar con ;*/
+	background: #EFEFEF;  /*Es super importante terminar con ;*/
 	font-family: Arial; /*se usa arial por el momento*/
 	font-size: 16px; /*El tamaño estandar de lectura es 16px*/
+	margin: 0; /*es buena practica quitarle los margenes al body*/
+}
+header
+{
+	border: 1px red solid; /*colocar el borde es buena forma de identificar 
+	el header, tiene tres valores, el ancho del borde, el color y el tipo de
+	linea*/
+	background: #434343;
+	margin: 10px; /*Margen externo*/
+	padding: 10px; /*margen interno*/
 }
