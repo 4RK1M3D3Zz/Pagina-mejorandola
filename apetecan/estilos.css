@@ -11,6 +11,6 @@ header
 	el header, tiene tres valores, el ancho del borde, el color y el tipo de
 	linea*/
 	background: #434343;
-	margin: 10px; /*Margen externo*/
-	padding: 10px; /*margen interno*/
-}
+	margin: 0; /*Margen externo, tambien se puede por cordenadas*/
+	padding: 0.5em; /*margen interno, arriba derecha, abajo e izquierda*/
+}/*em es el valor relativo a la fuente inmediata superior en el arbol*/
