@@ -7,11 +7,11 @@
 </head>
 <body>
 	<header> <!--Dentro de Body, no de head, existe la seccion header-->
-		<figure> <!--Para no dejar imagenes volando se utiliza la etqueta figure como caja de imagen -->
-			<img src="logo.png" />
+		<figure id="logo"> <!--Para no dejar imagenes volando se utiliza la etqueta figure como caja de imagen -->
+			<img src="logo.png" /><!--cuando un estilo se usa solo una vez se usa  id="" con su etiqueta, si se usa mas veces se usa clase y cuando es unica como header se deja solo header-->
 		</figure>
-		<h1>Indudablemente UNO</h1> <!--El h1 es para  colocar el titulo del header-->
-		<figure>
+		<h1 id="titulo_header">Indudablemente UNO</h1> <!--El h1 es para  colocar el titulo del header-->
+		<figure id="avatar">
 			<img src="avatar.jpg" />
 			<!--Agregar la flechita con fuentes de icono icon fonts-->
 			<figcaption>
@@ -21,36 +21,36 @@
 	</header>
 	<nav> <!--Navegacion-->
 		<ul> <!--Lista desordenada para la navegacion superior-->
-			<li>*</li> <!--Lista ordenada para cada opcion-->
+			<li id="flechita_nav">*</li> <!--Lista ordenada para cada opcion-->
 			<li>Python</li>
 			<li>HTML5</li>
 			<li>Javascript</li>
 			<li>CSS3</li>
 			<li>Django</li>
-			<li>Publicar</li>
+			<li id="publicar_nav">Publicar</li>
 		</ul>
 	</nav>
-	<section><!--Va a ser el contenido-->
-		<article> <!--El article es el post, una de las secciones-->
-			<figure>
+	<section id="contenido"><!--Va a ser el contenido-->
+		<article class="item"> <!--El article es el post, una de las secciones, pero como si se repite en id se pone clas-->
+			<figure class="imagen_item">
 				<img src="imagen.jpg" />
 			</figure>
-			<h2> <!--Titulo del post-->
+			<h2 class="titulo_item"> <!--Titulo del post-->
 				<a href="#">Post numero UNO</a>
 			</h2>
-			<p> <!--Texto informativo-->
+			<p class="autor_item"> <!--Texto informativo-->
 				Por <a href="#">Aaron Lopez</a>
 			</p>
-			<p><!--Datos en una misma linea-->
-				<a href="#">categoria</a>
-				<span>hace <strong>5</strong> min</span>
-				<a href="#">1000</a>
-				<a href="#">*</a>
+			<p class="datos_item"><!--Datos en una misma linea-->
+				<a class="tag_item" href="#">categoria</a>
+				<span class="fecha_item">hace <strong>5</strong> min</span>
+				<a class="comentarios_item" href="#">1000</a>
+				<a class="guardar_item" href="#">*</a>
 			</p>
-			<p> <!--Puntuacion en parrafo aparte-->
-				<a href="#">positivo</a>
+			<p class="votacion"> <!--Puntuacion en parrafo aparte-->
+				<a class="up" href="#">positivo</a>
 				461
-				<a href="#">negativo</a>
+				<a class="down" href="#">negativo</a>
 			</p>
 		</article>
 	</section>
