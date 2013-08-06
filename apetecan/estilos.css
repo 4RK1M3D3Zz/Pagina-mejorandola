@@ -30,10 +30,25 @@ header h1
 	margin: 1em 0 0 1em; /*separacion superior e izquierda de 20px*/
 	width: 50%; /*modifica el ancho maximo al cual se puede doblar*/
 }
+header #avatar 
+{
+	border: 2px solid peru; /*una buena practica para diferenciar cajas
+								es hacer un borde temporal es decir
+								este se borrará al final*/
+	float: right; /*como ya es un elemento inline-block solo lo hacemos flotar*/
+	margin: 1em 1em 0 0;
+}
+header #avatar figcaption
+{
+	background: #22BCE0;
+	float: right;/*lo hace flotar a la derecha, hay que hacer flotar el img tambien*/
+	height: 50px; /*alto fijo de 50 pixeles*/
+}
 header #avatar img 
 {
 	width: 50px; /*Este fue el segundo en ponerse pero se acomoda alfabetica
 	mente*/
+	float: left;
 }
 header #logo img /*no se deja solo en el figure #logo porque lo que vamos
 				a modificar es la imagen no el del Fifure*/
