@@ -1,13 +1,14 @@
 body /*Body es la etiqueta que englova todo lo visual*/
 {
 	background: #EFEFEF;  /*Es super importante terminar con ;*/
+	color: #4C4C4C;
 	font-family: Arial; /*se usa arial por el momento*/
 	font-size: 16px; /*El tamaño estandar de lectura es 16px*/
 	margin: 0; /*es buena practica quitarle los margenes al body*/
 }
 header
 {
-	border: 1px red solid; /*colocar el borde es buena forma de identificar 
+	/*border: 1px red solid; colocar el borde es buena forma de identificar 
 	el header, tiene tres valores, el ancho del borde, el color y el tipo de
 	linea*/
 	color: white;
@@ -24,8 +25,10 @@ header figure, header h1 /*se escriben separados de compa cuando sera
 }
 header h1
 {
-	font-size: 1em;
+	font-size: 20px;
 	font-weight: normal;
+	margin: 1em 0 0 1em; /*separacion superior e izquierda de 20px*/
+	width: 50%; /*modifica el ancho maximo al cual se puede doblar*/
 }
 header #avatar img 
 {
