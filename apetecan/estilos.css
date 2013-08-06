@@ -15,6 +15,13 @@ header
 	margin: 0; /*Margen externo, tambien se puede por cordenadas*/
 	padding: 0.5em; /*margen interno, arriba derecha, abajo e izquierda*/
 }/*em es el valor relativo a la fuente inmediata superior en el arbol*/
+header figure, header h1 /*se escriben separados de compa cuando sera
+							que se acomoden al mismo nivel y figure toma a 
+							todos los figures detro del header*/
+{
+	display: inline-block;/*Alineacion de las cajas en forma lineal*/
+	vertical-align: top;/*Alineacion de los obejtos dentro de las cajas arriba*/
+}
 header h1
 {
 	font-size: 1em;
