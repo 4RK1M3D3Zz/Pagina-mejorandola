@@ -15,6 +15,11 @@ header
 	margin: 0; /*Margen externo, tambien se puede por cordenadas*/
 	padding: 0.5em; /*margen interno, arriba derecha, abajo e izquierda*/
 }/*em es el valor relativo a la fuente inmediata superior en el arbol*/
+header h1
+{
+	font-size: 1em;
+	font-weight: normal;
+}
 header #avatar img 
 {
 	width: 50px; /*Este fue el segundo en ponerse pero se acomoda alfabetica
