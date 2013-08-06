@@ -14,3 +14,13 @@ header
 	margin: 0; /*Margen externo, tambien se puede por cordenadas*/
 	padding: 0.5em; /*margen interno, arriba derecha, abajo e izquierda*/
 }/*em es el valor relativo a la fuente inmediata superior en el arbol*/
+header #logo img /*no se deja solo en el figure #logo porque lo que vamos
+				a modificar es la imagen no el del Fifure*/
+{
+	width: 80px; /*Solo se coloca el ancho o el alto y el otro valor 
+					lo autoajustara automaticamente, aunque si se pueden 
+					forzar los valores, poner siempre el tamaño en pixeles
+					a los que se va a usar despues de haber sido exportado
+					al doble de pixeles para compativilidad en retina*/
+}
+}
