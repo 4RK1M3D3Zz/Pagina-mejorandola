@@ -10,6 +10,7 @@ header
 	border: 1px red solid; /*colocar el borde es buena forma de identificar 
 	el header, tiene tres valores, el ancho del borde, el color y el tipo de
 	linea*/
+	color: white;
 	background: #434343;
 	margin: 0; /*Margen externo, tambien se puede por cordenadas*/
 	padding: 0.5em; /*margen interno, arriba derecha, abajo e izquierda*/
