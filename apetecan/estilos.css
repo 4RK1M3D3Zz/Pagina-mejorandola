@@ -32,7 +32,7 @@ header h1
 }
 header #avatar 
 {
-	border: 2px solid peru; /*una buena practica para diferenciar cajas
+	/*border: 2px solid peru; /*una buena practica para diferenciar cajas
 								es hacer un borde temporal es decir
 								este se borrará al final*/
 	float: right; /*como ya es un elemento inline-block solo lo hacemos flotar*/
@@ -43,6 +43,7 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;/*lo hace flotar a la derecha, hay que hacer flotar el img tambien*/
 	height: 50px; /*alto fijo de 50 pixeles*/
+	padding: 0 2px; /*para agrandar el elemento clickeable*/
 }
 header #avatar img 
 {
@@ -58,6 +59,20 @@ header #logo img /*no se deja solo en el figure #logo porque lo que vamos
 					forzar los valores, poner siempre el tamaño en pixeles
 					a los que se va a usar despues de haber sido exportado
 					al doble de pixeles para compativilidad en retina*/
+}
+nav
+{
+	background: #878787;
+
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+}
+nav ul li a
+{
+	color: white;
 }
 #contenido .item .imagen_item img /*los id's van al ultimo, los class van
 									con un . antes de su clase*/
