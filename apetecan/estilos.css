@@ -14,6 +14,11 @@ header
 	margin: 0; /*Margen externo, tambien se puede por cordenadas*/
 	padding: 0.5em; /*margen interno, arriba derecha, abajo e izquierda*/
 }/*em es el valor relativo a la fuente inmediata superior en el arbol*/
+header #avatar img 
+{
+	width: 50px; /*Este fue el segundo en ponerse pero se acomoda alfabetica
+	mente*/
+}
 header #logo img /*no se deja solo en el figure #logo porque lo que vamos
 				a modificar es la imagen no el del Fifure*/
 {
@@ -23,4 +28,8 @@ header #logo img /*no se deja solo en el figure #logo porque lo que vamos
 					a los que se va a usar despues de haber sido exportado
 					al doble de pixeles para compativilidad en retina*/
 }
+#contenido .item .imagen_item img /*los id's van al ultimo, los class van
+									con un . antes de su clase*/
+{
+	width: 96px;
 }
