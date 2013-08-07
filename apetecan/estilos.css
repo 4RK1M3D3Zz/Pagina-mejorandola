@@ -1,3 +1,7 @@
+a
+{
+	text-decoration: none;
+}
 body /*Body es la etiqueta que englova todo lo visual*/
 {
 	background: #EFEFEF;  /*Es super importante terminar con ;*/
@@ -62,23 +66,42 @@ header #logo img /*no se deja solo en el figure #logo porque lo que vamos
 }
 nav
 {
-	background: #878787;
+	background: #878787;/*color del section nav*/
+	font-size: 0.9em;
 
 }
 nav ul
 {
-	list-style: none;
-	margin: 0;
+	list-style: none;/*es para quitar las bolitas de la lista*/
+	margin: 0;/*se quita para que esten todos juntos sin espacios*/
 	padding: 0;
 }
 nav ul li 
 {
-	display: inline-block;
-	vertical-align: top;
+	display: inline-block;/*coloca todas las cajas de nav en linea*/
+	margin: 0 1.2em 0 0;/*se le da un espacio externo para separarlos*/
+	vertical-align: top;/*se alinea el nav a la parte superior*/
 }
 nav ul li a
 {
 	color: white;
+	display: block;/*se convierte en cajas ya que ya están inline*/
+	padding: .5em 0;/*es la altura del margen interno*/
+}
+nav #flechita_nav a
+{
+	background: #22BCE0;
+	padding: .5em .5em;/*se le posiciona mejor*/
+}
+nav #publicar_nav
+{
+	float: right;/*se le hace pegar a la derecha*/
+	margin-right: 0;/*se le quita todo margen a la derecha para pegarse*/
+}
+nav #publicar_nav a
+{
+	background: #DD4F24;
+	padding: .5em 1em;
 }
 #contenido .item .imagen_item img /*los id's van al ultimo, los class van
 									con un . antes de su clase*/
