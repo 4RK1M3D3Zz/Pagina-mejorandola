@@ -7,7 +7,7 @@ body /*Body es la etiqueta que englova todo lo visual*/
 {
 	background: #EFEFEF;  /*Es super importante terminar con ;*/
 	color: #4C4C4C;
-	font-family: Arial; /*se usa arial por el momento*/
+	font-family: 'PT Sans', Arial; /*se usa arial por el momento*/
 	font-size: 16px; /*El tamaño estandar de lectura es 16px*/
 	margin: 0; /*es buena practica quitarle los margenes al body*/
 }
