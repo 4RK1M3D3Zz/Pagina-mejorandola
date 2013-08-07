@@ -1,5 +1,6 @@
 a
 {
+	color: #DD4F24;
 	text-decoration: none;
 }
 body /*Body es la etiqueta que englova todo lo visual*/
@@ -103,8 +104,44 @@ nav #publicar_nav a
 	background: #DD4F24;
 	padding: .5em 1em;
 }
+#contenido
+{
+	margin: 1em;
+}
+#contenido .item
+{
+	background: white;
+	border-bottom: 3px #22BCE0 solid;
+}
+#contenido .item p
+{
+	color: #7A7A7A;
+	font-size: 0.9em;
+}
+#contenido .item .datos_item .tag_item
+{
+	background: #22BCE0;
+	border-radius: 0.4em;
+	color: white;
+	padding: 0.2em 0.5em;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+	margin: 0 1em 0 0;
+}
 #contenido .item .imagen_item img /*los id's van al ultimo, los class van
 									con un . antes de su clase*/
 {
 	width: 96px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1em;
+	font-style: italic;
+	padding: .5em .5em 0;
+}
+#contenido .item .titulo_item a 
+{
+	color: #444;
 }
