@@ -112,6 +112,7 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	position: relative;
 }
 #contenido .item p
 {
@@ -144,4 +145,9 @@ nav #publicar_nav a
 #contenido .item .titulo_item a 
 {
 	color: #444;
+}
+#contenido .item .votacion
+{
+	border: 1px solid red;
+	width: 96px;
 }
