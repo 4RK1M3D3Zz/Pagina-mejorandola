@@ -148,6 +148,9 @@ nav #publicar_nav a
 }
 #contenido .item .votacion
 {
-	border: 1px solid red;
+	background: white;
+	margin: 3px 0 0 0;
+	position: absolute;
+	top: 100%;
 	width: 96px;
 }
