@@ -88,7 +88,6 @@ nav
 {
 	background: #878787;/*color del section nav*/
 	font-size: 0.9em;
-
 }
 nav ul
 {
@@ -158,6 +157,12 @@ nav #publicar_nav a
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	content: "\e004";
+	color: #FD5;
+	font-family: "icomoon";
 }
 #contenido .item .datos_item .tag_item
 {
