@@ -23,7 +23,15 @@ body /*Body es la etiqueta que englova todo lo visual*/
 }
 footer
 {
+	border-bottom: #434343;
+	color: #7A7A7A;
+	padding: 1em 0;
 	text-align: center;
+	width: 100%;
+}
+footer p 
+{
+	margin: 0;
 }
 header
 {
