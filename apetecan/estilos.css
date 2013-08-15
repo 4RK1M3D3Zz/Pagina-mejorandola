@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a
 {
 	color: #DD4F24;
@@ -48,7 +58,16 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;/*lo hace flotar a la derecha, hay que hacer flotar el img tambien*/
 	height: 50px; /*alto fijo de 50 pixeles*/
-	padding: 0 2px; /*para agrandar el elemento clickeable*/
+	/*padding: 0 2px; /*para agrandar el elemento clickeable*/
+	line-height: 50px;/*para centrar textos cortos lo mejor es hacer 
+	el alto de la linea igual al alto de su contenedor, en este caso la imagen*/
+}
+header #avatar figcaption:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
 }
 header #avatar img 
 {
@@ -92,16 +111,35 @@ nav ul li a
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: .5em .5em;/*se le posiciona mejor*/
+	padding: .5em 0;/*se le posiciona mejor*/
+}
+nav #flechita_nav a:after
+{
+	content: "\e002";
+	font-family: "icomoon";
+	opacity: 0.6;
 }
 nav #publicar_nav
 {
+	background: #DD4F24;
 	float: right;/*se le hace pegar a la derecha*/
 	margin-right: 0;/*se le quita todo margen a la derecha para pegarse*/
+	padding-right: 1em;
+	position: relative;
+}
+nav #publicar_nav:after
+{
+	color: rgba(255,255,255,0.5);
+	content: "\e003";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0,
 }
 nav #publicar_nav a
 {
-	background: #DD4F24;
+	display: inline-block;
 	padding: .5em 1em;
 }
 #contenido
@@ -158,4 +196,21 @@ nav #publicar_nav a
 	text-align: center;
 	top: 100%;
 	width: 96px;
+}
+#contenido .item .votacion .up:after,
+#contenido .item .votacion .down:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e001";
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e000";
 }
